@@ -1,0 +1,42 @@
+
+        <div class="col-s-12">
+            <div class="filtro">
+                <form target="_blank">
+
+                    <div class="col-s-2 titulo">
+                        <p>Búsqueda: </p>
+                    </div>
+
+                    <div class="col-s-7 buscador">
+                        <input type="search" name="busquedamusica" placeholder="Canción, autor, álbum...">
+                    </div>
+
+                    <div class="col-s-3 buscar">
+                        <input type="submit" value="Buscar">
+                    </div>
+        
+                  </form>
+            </div>
+        </div>
+
+        <div class="col-s-12 content">
+            <div class="galeria">
+
+                <div *ngFor="let producto of getproductolocalservice.productos" class="col-s-6 col-m-4 fotos">
+                    <img src="{{producto.imagenProducto}}" alt="">
+                        <div class="infor">
+                            <h1>{{producto.nombreProducto}}</h1>
+                            <p>{{producto.descripcionProducto}}</p>
+                        </div>
+                        <div class="boton">
+                            <div class="price">
+                                <h2>Precio</h2>
+                            </div>
+                            <app-producto-distrubuidor-precio [producto]="producto"></app-producto-distrubuidor-precio>
+                        </div>
+                </div>
+
+               
+
+            </div>
+        </div>

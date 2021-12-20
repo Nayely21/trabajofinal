@@ -1,0 +1,27 @@
+<div class="col-s-12 ">
+    <div class="header" >
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="" class="enlace">
+                <img id="logo" src="../../../assets/img/logo2.svg" alt="logo">
+            </a>
+            
+            <a routerLink='reserva' class="carro">
+                <img src="../../../assets/img/carro.svg" alt="carrito">
+            </a>
+            
+            <ul>
+                <li><a routerLink='' class="active">Bebidas</a></li>
+                <li><a *ngIf=" usuarioactivo!='' ||localactivo!=''" routerLink='info-user'>Mi perfil</a></li>
+                <li><a *ngIf="usuarioactivo!='' ||localactivo!=''" routerLink='entrega-pedidos'>Reservas</a></li>
+                <li><a *ngIf="localactivo!=''" routerLink='gestion-distribuidor' >Gestion</a></li>
+                <li><a *ngIf="adminactivo!='' " routerLink='total-gestion' >Gestionar</a></li>
+                <li><a *ngIf="adminactivo!=''||usuarioactivo!=''|| localactivo!=''"  (click)="borrar()" routerLink='login'>Cerrar Sesion</a></li>  
+                <li><a *ngIf="adminactivo=='' && usuarioactivo=='' && localactivo==''" routerLink='login'>Iniciar Sesion</a></li>  
+            </ul>
+        </nav>
+    </div>
+</div>

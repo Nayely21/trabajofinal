@@ -1,0 +1,53 @@
+<div class="col-s-4">
+    <div class="content-qr">
+        <div class="image-qr">
+            <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=http://localhost:4200/descripcion-boleta/{{idReserva}}&choe=UTF-8" alt="qr">
+        </div>
+    </div>
+</div>
+
+<div class="col-s-8 exter-caja">
+    <div class="inter-caja">
+        <div class="detalle-producto">
+            <div id="tittle">
+                <h1>Lista Productos</h1>
+            </div>
+            <div   class="producto">
+                <div id="nombre">
+                    <p>Nombre</p>
+                </div>
+
+                <div id="precio">
+
+                    <p> Cantidad ㅤㅤㅤㅤㅤㅤㅤPrecio</p>
+                </div>
+            </div>
+            <hr>
+            <div class="detalles " *ngFor="let detallereserva1 of descripcionboletaService.detallereservalista">
+
+                <div   class="producto">
+                    <div id="nombre">
+                        <p>{{detallereserva1.tieneProductoLocal.tieneProducto.nombreProducto}}</p>
+                    </div>
+
+                    <div id="precio">
+
+                        <p> {{detallereserva1.cantidadDetalleReserva}} ㅤㅤㅤㅤㅤㅤㅤ{{detallereserva1.tieneProductoLocal.precioProductoLocal*detallereserva1.cantidadDetalleReserva}}</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="total">
+                <div id="total">
+                    <p>Total</p>
+                </div>
+                <div id="total-precio">
+                    <p>{{descripcionboletaService.total(descripcionboletaService.detallereserva)}}</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+</div>

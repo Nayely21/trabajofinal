@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background: rgb(119,72,209);
+    background: linear-gradient(118deg, rgba(119,72,209,1) 0%, rgba(12,5,26,1) 58%, rgba(12,5,26,1) 100%);
+    margin: 0;
+}

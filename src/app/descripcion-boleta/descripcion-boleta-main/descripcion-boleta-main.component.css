@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+.content-qr{
+    padding: 50px;
+    text-align: center;
+}
+
+.image-qr{
+    background-color: white;
+    padding: 30px;
+}
+
+.image-qr img{
+    width: 50%;
+}
+
+.exter-caja{
+    padding: 50px; 
+}
+
+.inter-caja{
+    border: 2px solid #AF1E8F;
+}
+
+.inter-caja h1{
+    color: #F82D97;
+}
+
+.detalle{
+    padding: 50px;
+}
+
+
+#tittle{
+    border-bottom: 2px solid #E00ECC;
+}
+
+#tittle h1{
+    margin: 0;
+    color: #24AEC7;
+    padding: 10px;
+}
+
+#nombre{
+    display: inline-block;
+    padding: 5px;
+}
+
+#nombre p{
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+#precio{
+    float: right;
+    color: white;
+    padding: 5px;
+}
+
+#precio p{
+    margin: 0;
+    padding: 10px;
+}
+
+#total{
+    color: #24AEC7;
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+}
+
+#total p{
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+#total-precio{
+    float: right;
+    color: white;
+    padding: 5px;
+}
+
+#total-precio p{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 600px){
+    .content-qr{
+        padding: 20px;
+    }
+    .image-qr{
+        padding: 10px;
+    }
+
+}
+

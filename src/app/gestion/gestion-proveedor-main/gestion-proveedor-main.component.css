@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+.titulo{
+    text-align: center;
+}
+label{
+    padding: 20px;
+}
+
+#nombre{
+    width: 50%;
+}
+
+.boton{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.extra{
+    margin-left: 20px;
+}
+
+#tabla2{
+    border: 1px solid #A21B7A;
+}
+
+#tabla2 > tr > th{
+    border: 1px solid #A21B7A;
+}
+
+#tabla2 >tr> td{
+    border: 1px solid #A21B7A;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.cajat{
+    padding: 10px;
+}
+@media only screen and (min-width: 600px){
+    .boton{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}

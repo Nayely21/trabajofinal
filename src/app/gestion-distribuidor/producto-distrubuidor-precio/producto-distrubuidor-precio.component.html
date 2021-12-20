@@ -1,0 +1,16 @@
+
+<div class="for">
+    <form (ngSubmit)="getproductolocalservice.agregar(producto,precio)" action="">
+        <label for="precio">Precio</label>
+            <input type="number"
+            class="col-s-12"                                       
+            id="precio" 
+            placeholder="Precio" 
+            name="precio"
+            [(ngModel)]="precio">
+        <div class="enviar">
+            <button  type="submit">Agregar</button>
+        </div>
+        
+    </form>
+</div>

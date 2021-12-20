@@ -1,0 +1,25 @@
+<div class="col-s-12">
+    <div class="caja1">
+        <div *ngIf="entregaService.usuarioactivo!=''" >
+            <table class="col-s-12">
+            
+                <tr *ngFor="let reserva of entregaService.getlistareservas;let i=index">
+                    <td class="col-s-10 pedido">{{reserva.codReserva}} // {{reserva.fechaReserva}} </td>
+                    <td class="col-s-2 entrega"><button (click)="entregaService.eliminar(reserva.codReserva)">Eliminar</button><button  (click)="entregaService.vista(reserva.codReserva)">Vista</button></td>
+                </tr>
+            </table>
+            </div>
+            
+            <div *ngIf="entregaService.localactivo!=''">
+                <table class="col-s-12">
+                <tr *ngFor="let reserva of entregaService.getlistareservas;let i=index">
+                    <td class="col-s-10 pedido">{{reserva.codReserva}} // {{reserva.tieneUsuario.apellidoUsuario}}</td>
+                    <td class="col-s-2 entrega"><button (click)="entregaService.eliminar(reserva.codReserva)">Marcar Entregado</button><button (click)="entregaService.vista(reserva.codReserva)">Vista</button></td>
+                </tr>
+            </table>
+            </div>
+           
+       
+    </div>
+    
+</div>

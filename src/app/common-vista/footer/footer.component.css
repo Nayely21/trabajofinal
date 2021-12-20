@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+#time{
+    color: #F82D97;
+}
+
+footer{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+footer p{
+    color: white;
+    display: inline-block;
+
+}

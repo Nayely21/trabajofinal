@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.caja1{
+    padding: 30px;
+}
+
+table,tr{
+    border: 1px solid #A21B7A;
+    
+}
+
+.pedido{
+    padding: 10px;
+}
+
+.entrega{
+    padding: 10px;
+    display: inline-block;
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+

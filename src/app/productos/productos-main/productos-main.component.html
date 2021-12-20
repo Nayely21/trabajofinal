@@ -1,0 +1,33 @@
+
+        <div class="col-s-12">
+            <div class="titulo">
+                <h1 *ngIf="productoService.categoria.length!=0">{{productoService.categoria[0].nombreCategoria}}</h1>
+            </div>
+            <button (click)="productoService.ircategorias()" class="active">
+                CATEGORIAS
+            </button>
+        </div>
+
+        <div class="col-s-12 content">
+            <div class="galeria">
+
+                <div *ngFor="let productolocal1 of productoService.filtrar()" class="col-s-6 col-m-4 fotos">
+                    
+                    <img src={{productolocal1.tieneProducto.imagenProducto}} alt="">
+                        <div class="infor">
+                            <h1 class="puntitoNombre">{{productolocal1.tieneProducto.nombreProducto}}</h1>
+                            <p class="puntito">{{productolocal1.tieneProducto.descripcionProducto}}</p>
+                            <h2>{{productolocal1.precioProductoLocal}}</h2>
+                        </div>
+                        <div class="boton">
+                            <ul>
+                                <li><button  *ngIf="productoService.usuarioactivo=='' && productoService.localactivo=='' && productoService.adminactivo==''" (click)="productoService.login()">Carrito</button></li>
+                                <li *ngIf="productoService.usuarioactivo!='' || productoService.localactivo!='' || productoService.adminactivo!=''" ><button (click)="productoService.agregar(productolocal1)">Carrito</button></li>
+                            </ul>
+                        </div>
+                </div>
+
+                
+
+            </div>
+        </div>

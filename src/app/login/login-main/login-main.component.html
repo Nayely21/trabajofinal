@@ -1,0 +1,33 @@
+<div class="center-container col-s-12">
+    <div class="form-container">
+        <form (ngSubmit)="loginserices.ingresar()">
+            <div >
+                <h5 class="text-input-own">Usuario</h5>
+                <input 
+                type="text" 
+                class="input-own"
+                id="usuario"
+                placeholder="Ingrese su usuario"
+                name="usuario"
+                [(ngModel)]="loginserices.Usuario"
+                >
+                <h5 class="text-input-own">Contraseña</h5>
+                
+                <input 
+                type="password" 
+                class="input-own"
+                id="contrasena"
+                placeholder="Ingrese su contraseña"
+                name="contrasena"
+                [(ngModel)]="loginserices.Contrasena"
+                >
+            </div>
+            <div class="sub-div-center">
+                <button type="submit" class="btn-own">Ingresar</button>
+            </div>
+            <div class="registrar">
+                <a routerLink='../registro-usuario'><h2>Registrate</h2></a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+
+
+.titulo {
+    text-align: center;
+    padding: 9px;
+    background-color: #55417E;
+}
+
+.titulo h1 {
+    margin: 0;
+    color: #67C6D7;
+}
+
+.content {
+    background-color: #3C2568;
+
+}
+
+.galeria {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.fotos img {
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    height: 309px;
+}
+
+.fotos {
+    padding: 50px;
+    margin: 0;
+
+}
+
+.infor h1 {
+   margin: 0;
+}
+
+.infor p {
+    margin: 0;
+ }
+
+ .infor h2 {
+    margin: 0;
+ }
+
+ .infor {
+     text-align: center;
+     color: white;
+ }
+
+ .boton {
+     text-align: center;
+     margin-top: 10px;
+     
+ }
+
+ .boton ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .boton ul li{
+    padding: 5px;
+}
+
+ .boton ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+ }
+
+
+
+*{
+    box-sizing: border-box;
+}
+.puntito{
+    width: 250px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.puntitoNombre{
+    width: 250px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

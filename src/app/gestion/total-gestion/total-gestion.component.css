@@ -1,0 +1,18 @@
+.gestion{
+    padding: 200px;
+    text-align: center;
+}
+
+.gestion li{
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 40px;
+    
+}
+
+.gestion li a{
+    background-color: purple;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}

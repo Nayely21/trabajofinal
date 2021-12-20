@@ -1,0 +1,45 @@
+
+        <div class="col-s-12">
+            <div class="reversa">
+                <h1>Mi reversa</h1>
+            </div>
+        </div>
+
+        <div class="col-s-12">
+
+            <div class="detalle">
+
+                <div class="detalle-producto">
+                    <div id="tittle">
+                        <h1>Producto</h1>
+                    </div>
+
+                    <div class="detalles" *ngFor="let detallereserva of reservaService.detallesreservas">
+                        <div class="producto">
+                            <div id="nombre">
+                                <p>{{detallereserva.tieneProductoLocal.tieneProducto.nombreProducto}}</p>
+                            </div>
+                            <div id="precio">
+                                <p>{{detallereserva.tieneProductoLocal.precioProductoLocal*detallereserva.cantidadDetalleReserva}}</p>
+                            </div>
+                            <div id="precio">
+                                <p>{{detallereserva.cantidadDetalleReserva}}</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div id="total">
+                            <p>Total</p>
+                        </div>
+                        <div id="total-precio">
+                            <p>{{reservaService.total(reservaService.detallesreserva)}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reservar">
+                <button (click)="reservaService.reservar()">Hacer reserva</button>
+            </div>
+        </div> 

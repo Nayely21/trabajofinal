@@ -1,0 +1,61 @@
+<div class="col-s-12">
+    <div class="titulo">
+        <h1>Producto</h1>
+    </div>
+</div>
+<div class="col-s-12">
+    <form  (ngSubmit)="crearMarca()"action="">
+        
+        <div class="col-s-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" 
+            id="nombre" 
+            placeholder="Nombre" 
+            name="nombremarca"
+            [(ngModel)]="nuevaMarca.nombreMarca"
+            >
+        </div>
+        <div class="col-s-3 boton">
+            <button type="summit">Agregar</button>
+        </div>
+    </form>
+
+    <form action="">
+
+    <div class="cajat col-s-12">
+
+        <table class="col-s-12">
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+            </tr>
+        
+            <tr *ngFor="let marca of listarmarcas,let i=index">
+                <td>{{marca.codMarca}}</td>
+                <td>{{marca.nombreMarca}}</td>
+                <button (click)="eliminarMarca(marca.codMarca)">Eliminar</button>
+                <button (click)="actualizarvariable(marca)">Actualizar</button>
+            </tr>
+        </table>
+
+    </div>
+    </form>
+</div>
+
+<h3>Editar</h3>
+<form (ngSubmit)="actualizarMarcaF()" action="">
+    <table class="col-s-12">
+
+        <tr>
+            <td><label for="nombremarca">Nombre</label></td>
+            <td><input type="text" id="nombremarca" placeholder="Nombree" name="nombremarcaactualizado"
+                     [(ngModel)]="actualizarMarca.nombreMarca"></td>
+        </tr>
+
+    </table>
+
+    <div class="col-s-9 boton">
+        <button type="summit">Guardar Datos Nuevos</button>
+    </div>
+</form>
+

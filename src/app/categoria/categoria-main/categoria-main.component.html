@@ -1,0 +1,28 @@
+<div class="col-s-12 titulo">
+    <h1>Lo especial para ti</h1>
+</div>
+<div class="col-s-12 slider">  
+        <div class="col-s-12 sliderr">
+            <h1>Slider</h1>
+        </div>
+</div>
+<div class="col-s-12 titulo-categoria">
+    <h2>Escoga la Categoria de Bebida que quiere</h2>
+</div>
+<div class="col-s-12 categoria">
+    <div *ngFor="let categoria of categoriaservices.categorias; let i=index" class="col-s-6 col-m-4 col-l-3 caja">
+        <a routerLink='' (click)="categoriaservices.ingresar(categoria)"><h2 *ngIf="i%2==0;else estilo2" class="estilo1">{{categoria.nombreCategoria}}</h2></a> 
+        <ng-template #estilo2>
+            <h2 class="estilo2">{{categoria.nombreCategoria}}</h2>
+        </ng-template>
+    </div>
+
+    
+</div>
+
+
+    
+        
+        
+    
+

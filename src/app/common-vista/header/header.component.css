@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    padding: 20px;
+    background-image: linear-gradient(to top left, #8E70C8,#391680);
+    border-bottom: 3px solid black;
+}
+
+#logo{
+    width: 100px;
+}
+
+/* .carmen{
+    width: 40px;
+    float: right;
+    margin-left: 20px;
+} */
+
+
+nav ul{
+    float: right;
+    margin-top: 5px;
+}
+
+nav ul li{
+    display: inline-block;  
+    margin: 0 5px;
+}
+
+nav ul li a{
+    padding: 8px;
+    font-size: 15px;
+    color: white;
+
+}
+
+li a.active, li a:hover{
+    background-color: black;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.carro{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+
+.carro img{
+    width: 60px;
+}
+
+@media (max-width: 625px){
+    /* .enlace{
+        padding: 20px;
+    }
+    .header{
+        padding: 0;
+        margin: 0;
+    } */
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all 1.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li.active{
+        background-color: none;
+        color:red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+
+

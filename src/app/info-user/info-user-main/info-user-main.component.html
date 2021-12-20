@@ -1,0 +1,39 @@
+
+
+        <div class="col-s-12 col-m-6" >
+            <div class="foto">
+                <img src="../../../assets/img/xd.jpg" alt="foto">
+            </div>
+        </div>
+
+        <div class="col-s-12 col-m-6 " *ngIf="infouserServices.usuarioactivo!=''">
+            <div class="info" >
+                <h1>Usuario</h1>
+                <p>{{ infouserServices.usuario1.login}}</p>
+                <h1>Nombres y Apellidos</h1>
+                <p>{{ infouserServices.usuario1.nombreUsuario}}  {{infouserServices.usuario1.apellidoUsuario }}</p>
+                <h1>Direccion</h1>
+                <p>{{ infouserServices.usuario1.direccion }}</p>
+                <h1>DNI</h1>
+                <p>{{ infouserServices.usuario1.dniUsuario }}</p>
+                <h1>Numero de Contacto</h1>
+                <p>{{ infouserServices.usuario1.celular }}</p>
+                <h1>Correo Electronico</h1>
+                <p>{{ infouserServices.usuario1.correo }}</p>
+            </div>
+        </div>
+        <div *ngIf="infouserServices.localactivo!=''">
+            <div class="info" >
+                <h1>COdigo Local</h1>
+                <p>{{infouserServices.local1.codLocal}}</p>
+                <h1>Nombre Local</h1>
+                <p>{{ infouserServices.local1.nombreLocal}}  </p>
+                <h1>RUC</h1>
+                <p>{{ infouserServices.local1.rucLocal}}</p>
+                <h1>ubicacion</h1>
+                <p>{{ infouserServices.local1.ubicacionLocal }}</p>
+            </div>
+          </div>
+
+
+

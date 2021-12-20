@@ -1,0 +1,102 @@
+<div class="col-s-12">
+    <form (ngSubmit)="crearUsuario()">
+      <div class="formulario">
+        <label for="nombre">Nombres:</label>
+        <input 
+        type="text" 
+        id="nombre"
+        placeholder="Ingrese su nombre"
+        name="nombreusuario"
+        [(ngModel)]="nuevoUsuario.nombreUsuario"
+        >
+      </div>
+      <div class="formulario">
+        <label for="apellido">Apellidos:</label>
+        <input 
+        type="text" 
+        id="apellido"
+        placeholder="Ingrese su apellido"
+        name="apellidousuario"
+        [(ngModel)]="nuevoUsuario.apellidoUsuario"
+        >
+      </div>
+      <div class="formulario">
+        <label for="usuario">Usuario:</label>
+        <input 
+        type="text" 
+        id="usuario"
+        placeholder="usuario"
+        name="usuario"
+        [(ngModel)]="nuevoUsuario.login"
+        >
+      </div>
+      <div class="formulario">
+        <label for="contrasena">Contraseña:</label>
+        <input
+        type="password" 
+        id="contrasena"
+        placeholder="Ingrese su contraseña"
+        name="contrasena"
+        [(ngModel)]="nuevoUsuario.contrasena"
+        >
+      </div>
+      <!--<div class="formulario">
+        <label for="concontrasena">Confirmar Contraseña:</label>
+        <input 
+        type="password" 
+        id="concontrasena"
+        placeholder="Ingrese denuevo su contraseña"
+        name="concontrasena"
+        [(ngModel)]="nuevoUsuario.Contrasena"
+        >
+      </div>-->
+      <div class="formulario">
+        <label for="dni">DNI:</label>
+        <input 
+        type="text" 
+        id="dni"
+        placeholder="Ingrese su DNI"
+        name="dni"
+        [(ngModel)]="nuevoUsuario.dniUsuario"
+        >
+      </div>
+      <div class="formulario">
+        <label for="celular">Celular:</label>
+        <input 
+        type="text" 
+        id="celular"
+        placeholder="Ingrese su celular"
+        name="celular"
+        [(ngModel)]="nuevoUsuario.celular"
+        >
+      </div>
+      <div class="formulario">
+        <label for="correo">Correo:</label>
+        <input 
+        type="email" 
+        id="correo"
+        placeholder="Ingrese su correo"
+        name="correo"
+        [(ngModel)]="nuevoUsuario.correo"
+        >
+      </div>
+      <div class="formulario">
+        <label for="direccion" >Direccion:</label>
+        <input 
+        type="text" 
+        id="direccion"
+        placeholder="Ingrese su direccion"
+        name="direccion"
+        [(ngModel)]="nuevoUsuario.direccion"
+        >
+      </div>
+
+      <div class="envi">
+        <button type="submit" class="enviar">Confirmar</button>
+      </div>
+
+    </form>
+  
+  </div>
+
+

@@ -1,0 +1,87 @@
+
+
+.content {
+    background-color: #3C2568;
+
+}
+
+.galeria {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.fotos img {
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    height: 309px;
+}
+
+.fotos {
+    padding: 50px;
+    margin: 0;
+
+}
+
+.infor h1 {
+   margin: 0;
+}
+
+.infor p {
+    margin: 0;
+ }
+
+ .infor h2 {
+    margin: 0;
+ }
+
+ .infor {
+     text-align: center;
+     color: white;
+ }
+
+
+*{
+    box-sizing: border-box;
+}
+
+.titulo{
+    padding: 20px;
+}
+
+.titulo p{
+    margin: 0;
+    text-align: center;
+}
+
+.buscador{
+    padding: 20px;
+}
+
+.buscador input{
+    width: 100%;
+}
+
+.buscar{
+    padding: 20px;
+    text-align: center;
+}
+
+.buscar input{
+    width: 50%;
+    padding: 5px;
+}
+
+.price h2{
+    text-align: center;
+}
+
+.enviar{
+    text-align: center;
+}
+
+.enviar button{
+    margin: 10px 0;
+}

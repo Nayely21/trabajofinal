@@ -1,0 +1,72 @@
+<div class="col-s-12">
+    <div class="titulo">
+        <h1>Categoria</h1>
+    </div>
+</div>
+<div class="col-s-12">
+    <form (ngSubmit)="agregar()" action="">
+    
+        <div class="col-s-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" 
+            id="nombreCategoria" 
+            placeholder="Nombre" 
+            name="nombrecategoria"
+            [(ngModel)]="nombreCategoria"
+            >
+        </div>
+        <div class="col-s-3 boton">
+            <button type="summit">Agregar</button>
+    
+        </div>
+    </form>
+    <form (ngSubmit)="actualizar()" action="">
+        <table class="col-s-12">
+            <tr>
+                <td><label for="id">codigo Categoria</label></td>
+                <td><input type="number"  id="codCategoria" disabled placeholder="codCategoria" name="codCategoria"
+                         [(ngModel)]="codcategoria"></td>
+            </tr>
+            <tr>
+                <td><label for="Nombre">Nombre</label></td>
+                <td><input type="text" id="Nombre" placeholder="Nombre" name="nombrecategoria"
+                         [(ngModel)]="nombreCategoria"></td>
+            </tr>
+            
+        </table>
+    
+        <div class="col-s-9 boton">
+            <button type="summit">Guardar Datos Nuevos</button>
+        </div>
+    </form>
+    <form (ngSubmit)="eliminar()" action="">
+        <div class="col-s-3 boton">
+
+            <button type="submit" class="extra">Eliminar</button>
+        </div>
+        <div class="cajat col-s-12">
+    
+            <table class="col-s-12">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Seleccion</th>
+                </tr>
+            
+                <tr *ngFor="let categoria of gestioncategoriaservice.categorias,let i=index">
+                    <td>{{categoria.codCategoria}}</td>
+                    <td>{{categoria.nombreCategoria}}</td>
+                    <td><button class="button" (click)="actializarcategoria(categoria)">Editar</button></td>
+                    <td><input type="checkbox"   (click)="eliminacion.unshift(categoria.codCategoria)"></td>
+                </tr>
+            
+                
+            </table>
+        
+        </div>
+    </form>
+   
+</div>
+
+    
+
